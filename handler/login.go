@@ -44,5 +44,6 @@ func GetData(ctx *gin.Context) {
 	})
 
 	ctx.Redirect(http.StatusSeeOther, "/")
+	///a
 
 }
