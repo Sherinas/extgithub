@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-contrib/sessions"
@@ -13,6 +14,7 @@ func GetLogin(ctx *gin.Context) {
 	cache.ClearCache(ctx)
 	session := sessions.Default(ctx)
 	userID := session.Get("userID")
+	log.Printf("%v userID:", userID)
 
 	if userID != nil {
 
