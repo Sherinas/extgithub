@@ -15,6 +15,7 @@ func GetLogin(ctx *gin.Context) {
 	session := sessions.Default(ctx)
 	userID := session.Get("userID")
 	log.Printf("%vuser:", userID)
+	log.Printf("%v", userID)
 
 	if userID != nil {
 
