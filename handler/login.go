@@ -14,7 +14,7 @@ func GetLogin(ctx *gin.Context) {
 	cache.ClearCache(ctx)
 	session := sessions.Default(ctx)
 	userID := session.Get("userID")
-	log.Printf("%v userID:", userID)
+	log.Printf("%vuser:", userID)
 
 	if userID != nil {
 
