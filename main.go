@@ -24,6 +24,6 @@ func main() {
 	route.GET("/logout", handler.LogOut)
 
 	route.Run(":5000")
-	//this is the line forgood checking
+	//checking
 
 }
