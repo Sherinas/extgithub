@@ -23,6 +23,7 @@ func GetLogin(ctx *gin.Context) {
 	ctx.HTML(http.StatusOK, "index.html", gin.H{})
 }
 
+// jj
 func GetData(ctx *gin.Context) {
 	cache.ClearCache(ctx)
 	session := sessions.Default(ctx)
